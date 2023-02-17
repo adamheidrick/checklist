@@ -3,20 +3,23 @@
     'name': "Checklist",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        This is a checklist module for Odoo.""",
 
     'description': """
-        Long description of module's purpose
+        This is a checklist module for Odoo as per an interview technical assessment. This module should allow
+        the user to add checkboxes for every lead in order to check individual progress. Every lead should have all
+        the configured checkboxes. Checkboxes should be clickable without clicking edit before hand and saved 
+        automatically. Progress should be visible through a progress bar which is shown over the list. 
+        The progress bar should also be visible in the overview, in the KanBan board, for each lead. 
     """,
 
-    'author': "My Company",
-    'website': "https://www.yourcompany.com",
+    'author': "Adam Heidrick",
+    'website': "https://github.com/adamheidrick/checklist",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/16.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Productivity',
+    'category': 'Customizations',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
