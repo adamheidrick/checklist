@@ -1,7 +1,8 @@
 <odoo>
   <data>
-    <!-- explicit list view definition -->
+    <!-- explicit list view definitions -->
 
+      <!-- customize crm lead view to add a notebook page that includes progress bar and checklist -->
       <record id = "crm_lead_view_form_inherit" model="ir.ui.view">
        <field name = "name">crm.lead.inherit</field>
        <field name = "model">crm.lead</field>
@@ -20,7 +21,7 @@
        </field>
    </record>
 
-
+    <!-- explicit list view for checklist -->
     <record model="ir.ui.view" id="checklist.list">
       <field name="name">checklist list</field>
       <field name="model">todo.checklist</field>
@@ -31,6 +32,7 @@
       </field>
     </record>
 
+       <!--  modify kanban view of leads to include progress bar-->
       <record id="checklist.crm_case_kanban_view_leads" model="ir.ui.view">
           <field name ="name">crm.lead.inherit</field>
           <field name="model">crm.lead</field>

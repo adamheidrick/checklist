@@ -4,6 +4,7 @@ from odoo import models, fields, api
 
 
 class CheckList(models.Model):
+    """This class inherits from the crm.lead module and adds a checklist and progress bar of the checklist """
     _inherit = 'crm.lead'
 
     @api.depends("todo_checklist")
